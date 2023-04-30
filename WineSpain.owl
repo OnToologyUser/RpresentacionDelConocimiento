@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mjuar/ontologies/2023/3/Spanish_wines"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mjuar/ontologies/2023/3/Spanish_wines">
+    <Prefix name="" IRI="http://www.semanticweb.org/mjuar/ontologies/2023/3/Spanish_wines/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal>@Author:
+Mario Juárez Álvarez</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>@Version: 1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AlcoholContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bottle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cava"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Denomination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrapeVariety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Harvest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoseWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TastingNote"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineCompetition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WinePairing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrapeVariety"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produced_by"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAlcoholContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAward"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVariety"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isAwardedWine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClosErasmo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recaredo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGrapeVariety"/>
+            <Class IRI="#GrapeVariety"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Cava"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoseWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SweetWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#RedWine"/>
+        <Class IRI="#WhiteWine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RoseWine"/>
+        <Class IRI="#WhiteWine"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#RedWine"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WhiteWine"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cava"/>
+        <NamedIndividual IRI="#Recaredo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RedWine"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoseWine"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coin"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal>€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAward"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">654.31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuality"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVariety"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal>Priorato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAwardedWine"/>
+        <NamedIndividual IRI="#ClosErasmo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coin"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal>€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAward"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">130</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuality"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVariety"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal>Blanco espumoso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAwardedWine"/>
+        <NamedIndividual IRI="#Corpinnat_Enoteca_Reserva_Particular_de_Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coin"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal>€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAward"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuality"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVariety"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal>Cava</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAwardedWine"/>
+        <NamedIndividual IRI="#Recaredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coin"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal>€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAward"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuality"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVariety"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal>toro rojo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAwardedWine"/>
+        <NamedIndividual IRI="#Teso_La_Monja"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coin"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal>€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAward"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">397</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuality"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVariety"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal>Tempranillo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAwardedWine"/>
+        <NamedIndividual IRI="#Viña_El_Pisón"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGrapeVariety"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produced_by"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGrapeVariety"/>
+        <Class IRI="#GrapeVariety"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produced_by"/>
+        <Class IRI="#Winery"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isAwardedWine"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coin"/>
+        <Class IRI="#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAward"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasQuality"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVariety"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYear"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isAwardedWine"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#coin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAlcoholContent"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAward"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasQuality"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVariety"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYear"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isAwardedWine"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasGrapeVariety"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+                <Variable IRI="urn:swrl:var#variedad"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="urn:swrl:var#variety"/>
+                <Literal>Tempranillo</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RedWine"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasQuality"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+                <Variable IRI="urn:swrl:var#quality"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#quality"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAward"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+                <Variable IRI="urn:swrl:var#award"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasYear"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+                <Variable IRI="urn:swrl:var#year"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#year"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasVariety"/>
+                <Variable IRI="urn:swrl:var#wine"/>
+                <Literal>Reserva</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AlcoholContent</IRI>
+        <Literal>Alcohol content refers to the amount of ethanol (ethyl alcohol) present in an alcoholic beverage. It is usually expressed as a volume percentage of ethanol in relation to the total volume of the beverage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Award</IRI>
+        <Literal>Reward given in contests, raffles or sweepstakes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Award</IRI>
+        <Literal>https://dbpedia.org/ontology/Award</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bottle</IRI>
+        <Literal>Container for liquids, generally made of glass or plastic, tall, cylindrical and with a long, narrow neck.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cava</IRI>
+        <Literal>Type of sparkling alcoholic beverage made from fermented grapes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>A social community with a common political organization and its own territory and governing bodies that is sovereign and politically independent of other communities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Country</IRI>
+        <Literal>https://dbpedia.org/ontology/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Denomination</IRI>
+        <Literal>Distinctive sign that identifies a product as originating in the country or in a region or locality of the national territory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GrapeVariety</IRI>
+        <Literal>Refers to the type of grape used for winemaking. There are many grape varieties, each with specific characteristics that influence the flavor, aroma and color of the resulting wine. For example, some of the best known varieties for the production of red wine are Tempranillo, Cabernet Sauvignon, Merlot, Pinot Noir, etc. While for the production of white wine, varieties such as Chardonnay, Sauvignon Blanc, Riesling, etc. are used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Harvest</IRI>
+        <Literal>Consists of harvesting the grapes for the subsequent production of wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Price</IRI>
+        <Literal>The amount of money that allows the acquisition or use of a good or service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Province</IRI>
+        <Literal>Territorial administrative division in which some states are organized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Province</IRI>
+        <Literal>https://dbpedia.org/ontology/Province</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RedWine</IRI>
+        <Literal>Type of dark red alcoholic beverage obtained from black grape must fermented with the pips and skins of the grape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal>Territory that constitutes a homogeneous unit in a certain aspect due to historical, political, geographical, climatic, cultural, linguistic or other circumstances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Region</IRI>
+        <Literal>https://dbpedia.org/ontology/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RoseWine</IRI>
+        <Literal>Type of alcoholic beverage made from white and black grapes fermented with little maceration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SweetWine</IRI>
+        <Literal>Type of alcoholic beverage made from fermented grapes whose residual sugar content is greater than 45 grams of sugar per liter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TastingNote</IRI>
+        <Literal>Tasting notes are a series of statements that describe a specific beverage after having carried out the corresponding organoleptic examination, better known as the Tasting or Tasting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WhiteWine</IRI>
+        <Literal>Type of alcoholic beverage made from different types of fermented white grapes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine</IRI>
+        <Literal>A type of alcoholic beverage made from fermented grapes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Wine</IRI>
+        <Literal>https://dbpedia.org/ontology/Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WineCompetition</IRI>
+        <Literal>A wine competition is an event in which different wines are evaluated and awarded according to different categories and criteria, such as quality, taste, aroma, appearance, among other aspects. These competitions bring together wine tasting experts, winemakers and other wine professionals, who carry out an exhaustive evaluation of the wines presented and award prizes and recognitions to the best wines in each category. These competitions can be local, national or international and are held at different times of the year in different parts of the world.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WinePairing</IRI>
+        <Literal>Food and wine pairing is the process of pairing a food with a wine with the intention of enhancing the pleasure of eating them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Winery</IRI>
+        <Literal>Place, generally subway, where wine is raised and stored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Winery</IRI>
+        <Literal>https://dbpedia.org/ontology/Winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coin</IRI>
+        <Literal>Will include the name of the currency in use</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAlcoholContent</IRI>
+        <Literal>This data property stores the alcohol content of a wine in a decimal number. For example, a wine may have an alcohol content of 12.5%.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAward</IRI>
+        <Literal>Indicates whether a wine has been awarded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGrapeVariety</IRI>
+        <Literal>This object property relates a wine to the grape variety or varieties from which it was made. For example, a wine may be made primarily from Tempranillo grapes, but may also contain small amounts of other varieties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal>This data property stores the price of a wine in a given currency. For example, a wine may have a price of 20 euros per bottle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasQuality</IRI>
+        <Literal>Indicates whether a wine is of high quality or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasYear</IRI>
+        <Literal>Indicates the year the wine was made</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAwardedWine</IRI>
+        <Literal>indicates whether a wine has won an award</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#produced_by</IRI>
+        <Literal>This object property relates a wine to the winery or wineries that produced it. For example, a wine can be produced by one or several wineries.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
